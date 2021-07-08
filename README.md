@@ -35,3 +35,7 @@ After solution open, start the application.
 cd web\mini-books
 npm install && npm start
 ```
+<br><br>
+## Swagger URL
+
+https://localhost:44314/index.html
