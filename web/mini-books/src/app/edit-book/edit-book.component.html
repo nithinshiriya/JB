@@ -1,0 +1,20 @@
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+    <li class="breadcrumb-item active">Edit</li>
+  </ol>
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Edit Book</h2>
+      <div class="card-text">
+          <ng-container *ngIf="book;else displayElse">
+            <app-book-object-edit [book]="book" (saveBookEvent)="editBook($event)"></app-book-object-edit>
+          </ng-container>
+          <ng-template #displayElse>
+            <div *ngIf="loading" >Please wait...</div>  
+            <div *ngIf="hasError">    
+              <div class="error">The book you looking for not found. Try different book. {{errorString}}</div>
+            </div>          
+          </ng-template>
+      </div>
+    </div>
+  </div>

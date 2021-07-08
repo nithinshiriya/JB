@@ -1,0 +1,27 @@
+<form [formGroup]="bookForm" (ngSubmit)="onFormSubmit()">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <div class="input-group">
+        <input id="title" class="form-control" placeholder="Title" name="title" formControlName="title" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+        <label for="author">Author</label>
+        <div class="input-group">
+          <input id="author" class="form-control" placeholder="Author Name" name="author" formControlName="author" required >
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="coverImage">Cover Image</label>
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="inputGroupFile01" name="coverImage"  (change)="selectFile($event)">
+          <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+        </div>
+      </div>
+
+      <div>
+        <button type="submit" class="btn btn-outline-dark" [disabled]="bookForm.invalid">Save</button>
+      </div>
+</form>

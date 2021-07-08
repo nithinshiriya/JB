@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MiniProject.API</name>
+    </assembly>
+    <members>
+        <member name="M:MiniProject.API.Controllers.BooksController.GetAll">
+            <summary>
+            Get all books
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MiniProject.API.Controllers.BooksController.GetBook(System.Int32)">
+            <summary>
+            Get book by id
+            </summary>
+            <param name="bookid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MiniProject.API.Controllers.BooksController.EditBook(System.Int32,MiniProject.API.Repository.Models.Book)">
+            <summary>
+            Edit book by id
+            </summary>
+            <param name="bookid"></param>
+            <param name="book"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MiniProject.API.Controllers.BooksController.AddBook(MiniProject.API.Repository.Models.Book)">
+            <summary>
+            Add new book
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MiniProject.API.Controllers.BooksController.DeleteBook(System.Int32)">
+            <summary>
+            Delete book by id
+            </summary>
+            <param name="bookid"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

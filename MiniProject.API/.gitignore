@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/MiniProject.API/.vs/MiniProject.API
+/MiniProject.API/bin/Debug/netcoreapp3.1
+/MiniProject.API/obj
+/MiniProject.API/Log
+/MiniProject.API/.config
+/MiniProject.API/bin/Release/netcoreapp3.1
+/MiniProject.API.INTEGRATIONTESTS/obj
+/MiniProject.API.INTEGRATIONTESTS/bin/Release/netcoreapp3.1

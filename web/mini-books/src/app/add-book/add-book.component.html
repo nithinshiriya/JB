@@ -1,0 +1,12 @@
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+    <li class="breadcrumb-item active">Add</li>
+  </ol>
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Add Book</h2>
+      <div class="card-text">
+            <app-book-object-edit [book]="book" (saveBookEvent)="addBookEvent($event)"></app-book-object-edit>
+      </div>
+    </div>
+  </div>
