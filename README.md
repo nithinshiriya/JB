@@ -2,8 +2,8 @@
 To install this example application, run the following commands:
 
 ```bash
-git clone 
-cd 
+git clone https://github.com/nithinshiriya/JB.git
+cd JB
 ```
 <br><br>
 
